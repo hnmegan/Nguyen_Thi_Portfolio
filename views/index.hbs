@@ -1,2 +1,48 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+{{!-- header --}}
+	<header id="main-head">
+        <h1 class="hidden">Main Header</h1>
+
+		<div id="logo">
+    		<a href="index.hbs"><img src="images/logo.svg" alt="logo"></a>
+	    </div>
+        <hr>
+        <div class="header_text">
+            <h2>Megan Nguyen is a Designer, Illustrator and Video editor based in London, On, Canada.
+            <br><br>Interested in working together? <a href="#footer">Inquire here</a>.</h2>
+        </div>
+        <hr>
+    </header>
+
+    <section class="bio">
+        <p>
+            Megan grew up thinking she would become a lawyer but fell in love with media design on the way. Megan specializes in logo design, branding, website design, packaging design, motion design and illustration.
+            <br><br>She is available for design and freelance projects, collaborations and illustration commissions.
+        </p>
+    </section>
+
+    <section class="project">
+
+        <div class="project1">
+            {{#each project}}
+            <div id="photo_project">
+    		<a href="{{ID}}"><img src="images/{{Image}}" alt="logo"></a>
+	        </div>
+            <div class="details">
+            <h3>{{Name}}</h3>
+            <h3>{{Type}}</h3>
+            <p>{{Description}}</p>
+            </div>
+            {{/each}}
+        </div>
+    </section>
+
+    <video src="video/demoreel.mp4" controls autoplay muted></video>
+
+<footer id="footer">
+    <h2 class="hidden"></h2>
+    <h2>CONTACT FORM</h2>
+    <label for="name"></label>
+    <input type="text">
+</footer>
+
+
