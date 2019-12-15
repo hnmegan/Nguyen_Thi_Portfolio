@@ -1,0 +1,148 @@
+.about{
+    background-color: $beige;
+    margin: 50px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about a{
+    text-decoration: none;
+    color: $grey;
+    font-size: 20px;
+    line-height: 40px;
+}
+.about_text{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 30px;
+    
+}
+
+.about img{
+  width: 95%;
+
+}
+
+.about p{
+    line-height: 25px;
+}
+
+.about h4{
+    font-size: 25px;
+    font-weight: 600;
+}
+.about_left{
+    padding-top: 50px;
+    width: 170px;
+    padding-right: 30px;
+    padding-left: 20px;
+    text-align: right;
+}
+
+.about_right{
+        width: 200px;}
+    
+    
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .about a{
+        text-decoration: none;
+        color: $grey;
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .about_text{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-top: 30px;
+        
+    }
+    
+    .about img{
+      width: 95%;
+    
+    }
+    
+    .about p{
+        line-height: 38px;
+        font-size: 30px;
+    }
+    
+    .about h4{
+        font-size: 35px;
+        font-weight: 600;
+    }
+    .about_left{
+        padding-top: 75px;
+        width: 240px;
+        padding-right: 50px;
+        padding-left: 20px;
+        text-align: right;
+    }
+    
+    .about_right{
+        width: 350px;
+        padding-left: 50px;
+    }
+
+    .about img{
+        width: 500px;
+    }
+        
+        
+}
+
+@media screen and (min-width: 1024px)  {
+    .about a{
+        text-decoration: none;
+        color: $grey;
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .about_text{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-top: 30px;
+        
+    }
+    
+    .about img{
+      width: 95%;
+    
+    }
+    
+    .about p{
+        line-height: 40px;
+        font-size: 30px;
+    }
+    
+    .about h4{
+        font-size: 35px;
+        font-weight: 600;
+        line-height: 50px;
+    }
+    .about_left{
+        padding-top: 75px;
+        width: 240px;
+        padding-right: 50px;
+        padding-left: 20px;
+        text-align: right;
+    }
+    
+    .about_right{
+        width: 550px;
+        padding-left: 100px;
+    }
+        
+    .about{
+        margin: 70px auto;
+    }
+    .about img{
+        width: 840px;
+    }
+        
+}

@@ -1,17 +1,39 @@
 @import '_vars';
 @import 'modules/header';
 @import 'modules/bio';
+@import 'modules/about';
+@import 'modules/video';
+@import 'modules/footer';
+@import 'modules/section1';
+@import 'modules/lightbox';
 
 .hidden { display: none;}
+
+img{
+    width: 100%;
+}
 
 body{
     font-family: 'Barlow', sans-serif;
 }
 
 h2{
-    font-size: 12px;
+    font-size: 25px;
     color: $beige;
     font-weight: 100;
+}
+
+h3{
+    font-size: 20px;
+    font-weight: 1000;
+    line-height: 30px;
+}
+
+h4{
+    font-size: 40px;
+    text-decoration: bold;
+    color: $grey;
+    font-weight: 350;
 }
 
 a{
@@ -19,16 +41,26 @@ a{
     color: $beige;
 }
 
+p{
+    font-size: 20px;
+    color: $grey;
+    line-height: 27px;
+}
+
+
+ul{
+    font-size: 20px;
+    color: $beige;
+    line-height: 40px;
+}
 a:hover{
     text-decoration: underline;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
 
-}
 
-@media screen and (min-width: 1024px)  {
-    
-}
+
+
+
 
 

@@ -1,14 +1,45 @@
 // Bio
 .bio{
-    width: 90%;
-    margin: 70px;
-    border-left: 3px solid $grey;
+    width: 80%;
+    border-left: 2px solid $grey;
+    margin: 30px 20px;
 }
 
 .bio p{
-    font-size: 30px;
+    font-size: 18px;
     color: $grey;
-    font-weight: 50px;
-    padding: 0 50px;
-    line-height: 40px;
+    line-height: 20px;
+    padding-left: 20px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    
+    .bio{
+        width: 80%;
+        border-left: 2px solid $grey;
+        margin: 50px 70px;
+    }
+    
+    .bio p{
+        font-size: 30px;
+        color: $grey;
+        line-height: 40px;
+    }
+}
+
+@media screen and (min-width: 1024px)  {
+    .bio{
+        width: 80%;
+        border-left: 2px solid $grey;
+        margin: 50px 60px;
+    }
+    
+    .bio p{
+        font-size: 30px;
+        color: $grey;
+        line-height: 32px;
+    }
+    .bio img{
+        width: 5000px;
+    }
 }

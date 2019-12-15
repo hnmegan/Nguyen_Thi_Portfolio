@@ -1,4 +1,17 @@
 {{!-- header --}}
+
+
+    <div class="lightbox hidden">
+        <span class="close">X</span>
+        <h3 class="name"></h3>
+        <div class="imagelb">
+            <img class="img-1" src="">
+            <img class="img-2" src="">
+            <img class="img-3" src="">
+            <img class="img-4" src="">
+        </div>
+    </div>
+
 	<header id="main-head">
         <h1 class="hidden">Main Header</h1>
 
@@ -22,27 +35,115 @@
 
     <section class="project">
 
-        <div class="project1">
+        
             {{#each project}}
-            <div id="photo_project">
-    		<a href="{{ID}}"><img src="images/{{Image}}" alt="logo"></a>
+            <div id="project">
+                <div class="photo_project">
+    		        <a href="{{ID_detail1}}"><img src="images/{{Image}}" alt="project_photo"></a>
+	            </div>
+                <div class="details">
+                    <h3>{{Name}}</h3>
+                    <h3>{{Type}}</h3>
+                    <p>{{Description}}</p>
+                </div>
+            </div>
+            {{/each}}
+              
+        
+        
+    </section> 
+
+    <section class="about">
+        <img src="images/about_photo.jpg" alt="about_photo">
+        <div class="about_text">
+            <div class="about_left">
+            <h4>“Design shouldn't just look good it should do good as well”</h4>
+            </div>
+            <div class="about_right">
+                <div id="about_r_up">
+                <h4>CAPABILITIES</h4>
+            <p>
+                <br>GRAPHIC DESIGN
+                <br>LOGO DESIGN/ CUSTOM LOGOTYPE
+                <br>BRANDING/ VISUAL IDENTITY
+                <br>PACKAGING DESIGN
+                <br>WEBSITE DESIGN
+                <br>ILLUSTRATION
+            </p>
+                </div>
+                <div id="about_r_down">
+                     <br><a href="#footer">CONTACT</a>.</h2>
+                </div>
+
+        </div>
+    </section>    
+
+
+
+    <section class="project2">
+        <div id="project2">
+            {{#each project}}
+            <div class="photo_project">
+    		<a href="{{ID_detail2}}"><img src="images/{{Image_2}}" alt="project_photo"></a>
 	        </div>
-            <div class="details">
-            <h3>{{Name}}</h3>
-            <h3>{{Type}}</h3>
-            <p>{{Description}}</p>
+            <div class="details2">
+            <h3>{{Name_2}}</h3>
+            <h3>{{Type_2}}</h3>
+            <p>{{Description_2}}</p>
             </div>
             {{/each}}
         </div>
     </section>
 
-    <video src="video/demoreel.mp4" controls autoplay muted></video>
+    <section class="video">
+          <video src="video/demoreel.mp4" controls autoplay muted></video>
+        <div class="video_text">
+            <p>Demo reel created in Cinema4d and Premiere</p>
+        </div>
+    </section>  
+
+
+    <section class="project">
+
+        
+            {{#each project}}
+            <div id="project">
+                <div class="photo_project">
+    		        <a href="{{ID_detail3}}"><img src="images/{{Image_3}}" alt="project_photo"></a>
+	            </div>
+                <div class="details">
+                    <h3>{{Name_3}}</h3>
+                    <h3>{{Type_3}}</h3>
+                    <p>{{Description_3}}</p>
+                </div>
+            </div>
+            {{/each}}
+              
+        
+        
+    </section> 
+ 
 
 <footer id="footer">
-    <h2 class="hidden"></h2>
-    <h2>CONTACT FORM</h2>
-    <label for="name"></label>
-    <input type="text">
+    <div class="contact">
+        <h2>CONTACT FORM</h2>
+        <br>
+        <br>
+        <form>
+            <label><h3>Name</h3></label> <input>
+            <label><h3>Email</h3></label><input>
+            <label><h3>Message</h3></label><input>
+         
+        </form>
+    </div>
+    <div class="social">
+        <ul>
+          <li><a href="hnmegan@gmail.com">Emai</a></li>
+          <li><a href="https://www.instagram.com/megan.hn/">Instagram</a></li>
+          <li><a href="https://www.facebook.com/haingoccothi">Facebook</a></li>
+        </ul>
+        <p>© 2019</p>
+    </div>
 </footer>
 
 
