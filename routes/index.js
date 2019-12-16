@@ -7,7 +7,7 @@ var sql = require('../utils/sql')
 /*repeat section */
 router.get('/', (req, res, next) => {
   // res.render('index', { title: 'Megan Nguyen' });
-  
+  sql.getConnection((err, connection) => {
   console.log("at the main route");
 
   let query = `SELECT
@@ -21,6 +21,7 @@ right join project_detail3 ON project_detail1.ID = project_detail3.ID;
   let query2 = "SELECT * FROM project_detail2";
 
   sql.query(query, (err, result) => {
+    connection.release()
     if (err) {
       throw err;
       console.log(err);
@@ -41,6 +42,7 @@ right join project_detail3 ON project_detail1.ID = project_detail3.ID;
 
   //   res.render("index", { project2: result });
   // })
+  })
 })
 
 router.get("/project/:id", (req, res) => {
