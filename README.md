@@ -1,4 +1,4 @@
-<img src="images/logo_black100.svg" alt="logo" width="200px"/>
+<img src="https://github.com/hnmegan/Nguyen_Thi_Portfolio/blob/master/public/images/logo_black100.svg" alt="logo" width="200px"/>
 
 # Megan Nguyen's Portfolio
 Portfolio website featuring selected works and hosted on heroku.  To view the live site, please click on this [link](https://megannguyen.ca/)
