@@ -47,6 +47,16 @@ input{
     line-height: 60px;
 }
 
+footer .button{
+    border: $beige solid 1px;
+    background: none;
+    color: $beige;
+    font-size: 20px;
+    padding: 10px 40px;
+    margin-top: 20px;
+}
+
+
 
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -93,7 +103,15 @@ input{
     a:hover {
         text-decoration: underline;
       }
-
+      footer .button{
+        border: $beige solid 1px;
+        background: none;
+        color: $beige;
+        font-size: 20px;
+        padding: 10px 40px;
+        margin-top: 20px;
+    }
+   
 }
 
 @media screen and (min-width: 1024px)  {
